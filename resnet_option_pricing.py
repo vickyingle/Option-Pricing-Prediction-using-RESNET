@@ -49,7 +49,7 @@ class ResidualBlock(nn.Module):
         out += residual
         return F.relu(out)
 
-# ResNet(2,2) Model
+# ResNet(1,1) Model
 class ResNetClassifier(nn.Module):
     def __init__(self, in_channels, num_classes):
         super(ResNetClassifier, self).__init__()
